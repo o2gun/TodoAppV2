@@ -42,7 +42,7 @@ const addTodo = (todoArray) => {
 
         })
     } catch (error) {
-        console.log("mmmmsıçtın...")
+        console.log("u fucked up...")
 
     }
 }
@@ -59,30 +59,3 @@ addButtonDOM.addEventListener("click", (e) => {
     addTodo(todos)
 
 })
-
-// fetch("https://jsonplaceholder.typicode.com/posts").then(
-//     response => response.JSON()
-// ).then(responseJson => {
-//     response.JSON.forEach(item => {
-//         liDOM.innerHTML.
-//     })
-// })
-
-
-// // json object
-// const jsonData1 = '{ "name": "John", "age": 22 }';
-
-// // converting to JavaScript object
-// const obj1 = JSON.parse(jsonData1);
-
-// // accessing the data
-// console.log(obj1); // John
-// ---
-// // JavaScript object
-// const jsonData = { "name": "Tomy", "age": 22 };
-
-// // converting to JSON
-// const obj = JSON.stringify(jsonData);
-
-// // accessing the data
-// console.log(obj); // "{"name":"John","age":22}"
