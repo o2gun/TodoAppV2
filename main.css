@@ -64,7 +64,7 @@ form .add {
     height: 40px;
     font-weight: bold;
     font-weight: 16px;
-    transition: 0.1s all;
+    transition: 0.4s all;
 }
 
 .todoCart {
@@ -109,4 +109,71 @@ form .add:hover {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #ac271e;
+}
+
+@media only screen and (max-width:768px) {
+    form .todoInput {
+        width: 90%;
+    }
+
+
+    form .todoInput {
+        font-size: 20px;
+        outline: none;
+        border: none;
+        padding: 19px 130px 16px 4px;
+        border-radius: 12px;
+    }
+
+    form .add {
+        width: 80px;
+        height: 50px;
+        top: 75%;
+        right: 0;
+        font-size: 18px;
+    }
+
+    form .add:hover {
+        width: 80px;
+        height: 50px;
+        top: 75%;
+        right: 0;
+        transform: translate(0, -50%);
+        border-radius: 4px;
+        background-color: #da291c;
+        color: #fff;
+        border: 1px solid #da291c;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .todoContainer {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 5px 5px 10px;
+        background-color: #fc655a;
+        margin-bottom: 10px;
+        color: #fff;
+        width: 100%;
+        height: 80px;
+        font-weight: bold;
+        font-weight: 16px;
+        transition: 0.4s all;
+    }
+
+    .delete {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 0px;
+        width: 0px;
+        background-color: #fc655a;
+        transform: translate(100%, 0);
+        border-radius: 50px;
+    }
+
 }

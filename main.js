@@ -24,7 +24,9 @@ const addTodo = (todoArray) => {
     try {
         let mapTodos = todoArray.map(item => `<div class="todoContainer">
     <div class="todoCard">${item}</div>
-    <button class="delete">x</button>
+    <button class="delete">
+    <img src="images/cop.png" width="15" height="20">
+    </button>
     </div>`)
         mapTodos = mapTodos.join("");
         containerDOM.innerHTML = mapTodos
